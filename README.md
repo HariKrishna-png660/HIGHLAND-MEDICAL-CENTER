@@ -1,36 +1,96 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🏥 Highland Medical Center
 
-## Getting Started
+Highland Medical Center is a comprehensive healthcare management platform designed to streamline patient consultations and hospital operations. This full-stack application provides a seamless experience for patients to find doctors, book appointments, and manage their health journey, while offering a robust administrative dashboard for hospital management.
 
-First, run the development server:
+## 🚀 Core Features
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+- **Patient Portal**:
+  - Interactive doctor discovery by department and specialty.
+  - Real-time appointment scheduling and management.
+  - Secure patient authentication (via NextAuth.js).
+  - Integrated payment gateway (PayPal) for consultation fees.
+- **Admin Dashboard**:
+  - Comprehensive management of doctors, patients, and appointments.
+  - Real-time analytics and reporting via interactive charts.
+  - Banner and department management for site customization.
+  - Staff leave management and scheduling configuration.
+- **AI Integration**:
+  - Smart health assistance and automated FAQ handling (Gemini AI).
+- **Responsive Design**:
+  - Modern, teal-themed UI with full dark/light mode support.
+  - Optimized for both desktop and mobile devices.
+
+## 🛠️ Tech Stack
+
+- **Framework**: [Next.js 15 (App Router)](https://nextjs.org/)
+- **Language**: [TypeScript](https://www.typescriptlang.org/)
+- **Styling**: [Tailwind CSS 4](https://tailwindcss.com/)
+- **Database**: [PostgreSQL (Neon)](https://neon.tech/)
+- **ORM**: [Prisma](https://www.prisma.io/)
+- **Authentication**: [NextAuth.js v5](https://authjs.dev/)
+- **Payments**: [PayPal SDK](https://developer.paypal.com/)
+- **UI Components**: [Shadcn UI](https://ui.shadcn.com/) (Radix UI)
+- **State/Forms**: [React Hook Form](https://react-hook-form.com/) & [Zod](https://zod.dev/)
+- **Deployment**: [Vercel](https://vercel.com/)
+
+## ⚙️ Project Setup
+
+### Prerequisites
+
+- Node.js 20+
+- PostgreSQL database (Neon recommended)
+- PayPal Developer account (for sandbox testing)
+
+### Installation
+
+1. **Clone the repository**:
+   ```bash
+   git clone <repository-url>
+   cd highlandhospital
+   ```
+
+2. **Install dependencies**:
+   ```bash
+   npm install
+   ```
+
+3. **Environment Configuration**:
+   Create a `.env` file in the root directory and add the following:
+   ```env
+   DATABASE_URL="your-postgresql-url"
+   AUTH_SECRET="your-auth-secret"
+   PAYPAL_CLIENT_ID="your-paypal-client-id"
+   PAYPAL_SECRET="your-paypal-secret"
+   PAYPAL_API_BASE_URL="https://api-m.sandbox.paypal.com"
+   APP_TIMEZONE="Asia/Kolkata"
+   NEXT_PUBLIC_APP_NAME="Highland Medical Center"
+   ```
+
+4. **Database Initialization**:
+   ```bash
+   npx prisma generate
+   npx prisma db push
+   # Optional: Seed the database
+   npm run seed 
+   ```
+
+5. **Run Development Server**:
+   ```bash
+   npm run dev
+   ```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## 📁 Project Structure
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+- `app/`: Next.js App Router pages and layouts.
+- `components/`: Reusable UI components (Atoms, Molecules, Organisms).
+- `db/`: Database schema and seeding logic.
+- `hooks/`: Custom React hooks.
+- `lib/`: Utility functions and shared logic.
+- `prisma/`: Prisma schema and migrations.
+- `public/`: Static assets and images.
 
-## Learn More
+---
 
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Built with ❤️ for Highland Medical Center.
