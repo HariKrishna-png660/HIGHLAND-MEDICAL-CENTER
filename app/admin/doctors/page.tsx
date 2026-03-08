@@ -1,4 +1,5 @@
 import React from "react";
+export const dynamic = "force-dynamic";
 import { getAdminDoctors } from "@/lib/actions/admin.actions";
 import { AdminDoctorData } from "@/types";
 import DoctorsManagementClient from "./doctors-management-client";

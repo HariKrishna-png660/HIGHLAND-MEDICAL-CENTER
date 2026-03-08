@@ -1,4 +1,5 @@
 import React from "react";
+export const dynamic = "force-dynamic";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import AdminSettingsClient from "../../../components/organisms/admin/admin-settings-client";
 import BannerSettings from "@/components/organisms/admin/banner-settings";

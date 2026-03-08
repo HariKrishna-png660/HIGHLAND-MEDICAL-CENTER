@@ -1,3 +1,4 @@
+export const dynamic = "force-dynamic";
 import DepartmentsSection from "@/components/organisms/our-departments";
 import OurDoctors from "@/components/organisms/our-doctors";
 import PatientTestimonials from "@/components/organisms/patient-testimonials-section";
