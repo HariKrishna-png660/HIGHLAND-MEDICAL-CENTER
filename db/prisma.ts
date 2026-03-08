@@ -8,6 +8,16 @@ if (!connectionString) {
 }
 
 const adapter = connectionString ? new PrismaNeon({ connectionString }) : undefined;
-export const prisma = adapter ? new PrismaClient({ adapter }) : new PrismaClient();
+
+export const prisma = adapter 
+  ? new PrismaClient({ adapter }) 
+  : new PrismaClient({
+      datasources: {
+        db: {
+          url: "postgresql://dummy:dummy@localhost:5432/dummy?sslmode=require"
+        }
+      }
+    });
+
 
 
