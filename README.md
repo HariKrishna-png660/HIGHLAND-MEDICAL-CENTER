@@ -14,8 +14,6 @@ Highland Medical Center is a comprehensive healthcare management platform design
   - Real-time analytics and reporting via interactive charts.
   - Banner and department management for site customization.
   - Staff leave management and scheduling configuration.
-- **AI Integration**:
-  - Smart health assistance and automated FAQ handling (Gemini AI).
 - **Responsive Design**:
   - Modern, teal-themed UI with full dark/light mode support.
   - Optimized for both desktop and mobile devices.
