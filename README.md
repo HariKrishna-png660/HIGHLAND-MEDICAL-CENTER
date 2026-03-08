@@ -1,8 +1,8 @@
-# 🏥 Highland Medical Center
+# Highland Medical Center
 
-Highland Medical Center is a comprehensive healthcare management platform designed to streamline patient consultations and hospital operations. This full-stack application provides a seamless experience for patients to find doctors, book appointments, and manage their health journey, while offering a robust administrative dashboard for hospital management.
+Highland Medical Center is a healthcare management platform designed to streamline patient consultations and hospital operations. This full-stack application provides a seamless experience for patients to find doctors, book appointments, and manage their health journey, while offering a robust administrative dashboard for hospital management.
 
-## 🚀 Core Features
+## Features
 
 - **Patient Portal**:
   - Interactive doctor discovery by department and specialty.
@@ -14,11 +14,8 @@ Highland Medical Center is a comprehensive healthcare management platform design
   - Real-time analytics and reporting via interactive charts.
   - Banner and department management for site customization.
   - Staff leave management and scheduling configuration.
-- **Responsive Design**:
-  - Modern, teal-themed UI with full dark/light mode support.
-  - Optimized for both desktop and mobile devices.
 
-## 🛠️ Tech Stack
+##  Tech Stack
 
 - **Framework**: [Next.js 15 (App Router)](https://nextjs.org/)
 - **Language**: [TypeScript](https://www.typescriptlang.org/)
@@ -31,7 +28,7 @@ Highland Medical Center is a comprehensive healthcare management platform design
 - **State/Forms**: [React Hook Form](https://react-hook-form.com/) & [Zod](https://zod.dev/)
 - **Deployment**: [Vercel](https://vercel.com/)
 
-## ⚙️ Project Setup
+## Project Setup
 
 ### Prerequisites
 
@@ -79,7 +76,7 @@ Highland Medical Center is a comprehensive healthcare management platform design
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-## 📁 Project Structure
+## Project Structure
 
 - `app/`: Next.js App Router pages and layouts.
 - `components/`: Reusable UI components (Atoms, Molecules, Organisms).
@@ -90,5 +87,3 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 - `public/`: Static assets and images.
 
 ---
-
-Built with ❤️ for Highland Medical Center.
