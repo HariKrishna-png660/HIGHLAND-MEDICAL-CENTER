@@ -8,5 +8,6 @@ if (!connectionString) {
 }
 
 const adapter = connectionString ? new PrismaNeon({ connectionString }) : undefined;
-export const prisma = new PrismaClient(adapter ? { adapter } : {});
+export const prisma = adapter ? new PrismaClient({ adapter }) : new PrismaClient();
+
 
