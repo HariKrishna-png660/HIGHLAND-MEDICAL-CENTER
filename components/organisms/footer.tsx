@@ -1,4 +1,4 @@
-import { Phone, Mail, MapPin } from "lucide-react";
+import { Phone, Mail, MapPin, Github, Linkedin } from "lucide-react";
 
 export default function Footer() {
   return (
@@ -31,6 +31,29 @@ export default function Footer() {
               </div>
             </div>
           </div>
+        </div>
+
+        {/* Made with love section */}
+        <div className="flex items-center justify-center gap-4 body-regular text-text-caption-1">
+          <span>Made with ❤️ by Hari</span>
+          <a
+            href="https://github.com/HariKrishna-png660"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="GitHub"
+            className="hover:opacity-70 transition-opacity"
+          >
+            <Github size={18} />
+          </a>
+          <a
+            href="https://www.linkedin.com/in/hari-krishna-t2006"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="LinkedIn"
+            className="hover:opacity-70 transition-opacity"
+          >
+            <Linkedin size={18} />
+          </a>
         </div>
 
         {/* Copyright Section */}
