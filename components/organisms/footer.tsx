@@ -35,7 +35,7 @@ export default function Footer() {
 
         {/* Copyright Section */}
         <div className="text-center body-regular text-text-caption-1">
-          <p>&copy; 2025 Highland Medical Center. All rights reserved.</p>
+          <p>&copy; 2026 Highland Medical Center. All rights reserved.</p>
         </div>
       </div>
     </footer>
